@@ -11,7 +11,7 @@ public class CheckBox {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver1.exe");
         WebDriver driver = new ChromeDriver();
-		
+		driver.get("http://training.qaonlinetraining.com/testPage.php");
 		WebElement checkboxBoat = driver.findElement(By.xpath("//input[@value='boat']"));
 //      checkbox bike
       WebElement checkboxBike = driver.findElement(By.xpath("//input[@value='Bike']"));
