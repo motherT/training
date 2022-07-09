@@ -11,7 +11,7 @@ public class LinkTest {
 		// TODO Auto-generated method stub
 		WebDriver driver;
         // for running in Chrome, uncomment 2 following lines
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Administrator\\Documents\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
         driver = new ChromeDriver();
 //        System.setProperty("webdriver.gecko.driver", "C:\\Users\\Administrator\\Documents\\drivers\\geckodriver.exe");
 //        driver = new FirefoxDriver();
