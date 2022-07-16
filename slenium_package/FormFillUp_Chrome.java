@@ -29,49 +29,6 @@ public static void main(String[] args) {
     // Comment section
     driver.findElement(By.name("comment")).sendKeys("demo comment");
     
-    
-    // Clicking radio button --------------------
-    // Female Radio button select
-    driver.findElement(By.xpath("//input[@value='female']")).click();
-  
-    // male Radio button select
-    driver.findElement(By.xpath("//input[@value='male']")).click();
-  
-    // Other Radio button select
-    driver.findElement(By.xpath("//input[@value='Other']")).click();
-    
-    // Clicking check-boxes What do you have: ---- Car is selected by default
-    // Removing car option -- un-check
-    driver.findElement(By.name("car")).click(); //-- this will un-check the car option as it is already selected
-  
-    // Bike option check
-    driver.findElement(By.name("bike")).click();
-    
-    // boat option check
-    driver.findElement(By.name("boat")).click();
-    
-    // horse option check
-    driver.findElement(By.name("horse")).click();
-    
-    // Using Select option from selenium library
-    // selecting option from menu web elements -- Country list select -- DropDown list
-    //creating object for selecting web element
-    Select countrySelect = new Select(driver.findElement(By.name("country")));
-    // using countrySelect to select the visible text from the drop-down menu
-    countrySelect.selectByVisibleText("USA"); //options [USA,India, Ethiopia,France]
-    //or
-    countrySelect.selectByVisibleText("France");
-    
-    //Select Option for skill menu
-    Select skillSelect = new Select(driver.findElement(By.name("skill")));
-    //using skillSelect to select menu options -- Programming
-    skillSelect.selectByVisibleText("Programming");
-    
-    //OR
-    //using skillSelect to select menu options -- Database
-    skillSelect.selectByVisibleText("Database");
-    
-    
     //Click on Send Button
     driver.findElement(By.name("submit")).click();
    
