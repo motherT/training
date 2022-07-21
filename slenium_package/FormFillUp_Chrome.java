@@ -9,27 +9,31 @@ import org.openqa.selenium.support.ui.Select;
 
 public class FormFillUp_Chrome {
 public static void main(String[] args) {
-	String urlString = "http://www.training.qaonlinetraining.com/testPage.php";
+	
+    // Create a object of WebDriver 
     WebDriver driver;
-    System.setProperty("webdriver.chrome.driver", "C:\\Users\\Administrator\\Documents\\drivers\\chromedriver.exe");
+   // setProperty method is used to set the path of driver from system location
+    System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
+	
+    // Create the object of the driver
     driver = new ChromeDriver();
     // opening website for form fill up
-    driver.get(urlString);
+    driver.get("http://www.training.qaonlinetraining.com/testPage.php");
     
     // sending text to the input box in the web form--------------
-    // filling the name section
+    // Locate and filling the name section
     driver.findElement(By.name("name")).sendKeys("DemoName");
  
-    // E mail section
+    //Locate and fill the  E mail section
     driver.findElement(By.name("email")).sendKeys("DemoEmail@demo.com");
     
-    // Website section
+    //Locate and fill the  Website section
     driver.findElement(By.name("website")).sendKeys("www.demosite.com");
     
-    // Comment section
+    // Locate and fill the Comment section
     driver.findElement(By.name("comment")).sendKeys("demo comment");
     
-    //Click on Send Button
+    //Locate and Click on Send Button
     driver.findElement(By.name("submit")).click();
    
 }
