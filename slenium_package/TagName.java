@@ -9,6 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TagName {
 
+	// In this code we are trying to fetch all the links in webpage 
+	// Locate the elements using tag name 
+	// Fetch the link one by one using loop 
+	//Count the number of link in webpage 
 	public static void main(String[] args) {
 		// Create object of WebDriver class
 		 WebDriver driver;
