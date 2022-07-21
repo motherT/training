@@ -2,6 +2,9 @@ package seleniumPackage;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
+// In this code we are trying open a google chrome website using get method
+
+
 public class OpenChrome {
 
 	public static void main(String[] args) {
