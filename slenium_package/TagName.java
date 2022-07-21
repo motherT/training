@@ -10,26 +10,31 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class TagName {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Create object of WebDriver class
 		 WebDriver driver;
-	        // for running in Chrome, uncomment 2 following lines
-	        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver1.exe");
-	        driver = new ChromeDriver();
-//	        System.setProperty("webdriver.gecko.driver", "C:\\Users\\Administrator\\Documents\\drivers\\geckodriver.exe");
-//	        driver = new FirefoxDriver();
 	        
-	        driver.get("https://www.itlearn360.com/");
+		// setProperty method is used to set the path of driver from system location
+	        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
+		// Intialize value to the driver
+	        driver = new ChromeDriver();
+		
+		// pass the link of driver
+	     	 driver.get("https://www.itlearn360.com/");
 	        int count = 0;
-	        // Counting links of google site , located by tagName
+	        // Counting links of itlearn360 site , located by tagName
 	        // using Findelements
 	        List<WebElement> allLinks = driver.findElements(By.tagName("a"));
 	        for (WebElement link : allLinks) {
 	            // print the each url 
 	            System.out.println(link.getAttribute("href"));
+			// the number of link keep counting along with loop
 	            count ++;
 	            
 	        }
+		// Print the total numbers of links
 	        System.out.println("total number of links present: "+count);
+		
+		// close the driver
 	        driver.close();
 	}
 
