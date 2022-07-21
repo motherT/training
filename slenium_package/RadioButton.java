@@ -5,6 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+// In this code we are trying to perform click on radio button in form
+// Locate the radio buttons
+// Perform click on buttons and submit
+	
 public class RadioButton {
 
 	public static void main(String[] args) throws InterruptedException {
@@ -29,6 +33,8 @@ public class RadioButton {
 		
 		// perform click on the elements in webpage
 	        radioButtonFemale.click();
+		
+		//Thread is a class in java used to hold a part of code for some given time using sleep method. 
 	        Thread.sleep(6000);
 	        radioButtonMale.click();
 	        submitButton.click();
