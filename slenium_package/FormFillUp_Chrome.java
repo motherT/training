@@ -8,6 +8,12 @@ import org.openqa.selenium.support.ui.Select;
 
 
 public class FormFillUp_Chrome {
+	
+	// In this code we are trying to pass the value in input box and click thesend button
+	// Locate the element and pass the value to input box
+	
+	//Click the send button and submit the value
+	
 public static void main(String[] args) {
 	
     // Create a object of WebDriver 
