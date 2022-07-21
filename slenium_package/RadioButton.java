@@ -8,9 +8,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class RadioButton {
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver1.exe");
-        WebDriver driver = new ChromeDriver();
+		
+		// setProperty method is used to set the path of driver from system location
+		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
+		
+		// Intialize value to the driver
+       		 WebDriver driver = new ChromeDriver();
+		
+		// pass the link using  driver
 	        driver.get("http://training.qaonlinetraining.com/testPage.php");
 	        // now we will save the Web element radio in one object and perform click action
 	        //radio option female
