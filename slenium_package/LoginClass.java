@@ -5,12 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+// In this code we are trying to peform login to a website.
+// Locate the email and password input box 
+// clear the section as there is value by default and then send the value using sendkeys
+//Click the login button and submit the value
 public class LoginClass {
-
-	// In this code we are trying to peform login to a website.
-	// Locate the email and password input box 
-	// clear the section as there is value by default and then send the value using sendkeys
-	//Click the login button and submit the value
+	
 	public static void main(String[] args) {
 	// Create a object of WebDriver 
 	WebDriver driver;
