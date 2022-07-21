@@ -12,9 +12,12 @@ public class LoginClass {
 	// clear the section as there is value by default and then send the value using sendkeys
 	//Click the login button and submit the value
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	// Create a object of WebDriver 
 	WebDriver driver;
-        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver1.exe");
+		
+	// setProperty method is used to set the path of driver from system location
+        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
+	// Intialize value to the driver
         driver = new ChromeDriver();
 	// pass the link of driver 
         driver.get("https://admin-demo.nopcommerce.com/login");
