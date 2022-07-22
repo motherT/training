@@ -3,7 +3,7 @@ package javaPackage;
 public class MultipleSum {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Intialize value to variable and add variable
 
 		int a =50;
 		int b=100;
