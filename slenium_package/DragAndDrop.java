@@ -15,13 +15,15 @@ public class DragAndDrop {
 		driver.get("http://jqueryui.com/droppable/");
         // focussing inside the iframe - Frame WebElement
         driver.switchTo().frame(0);
-        // using xpath
+        // using xpath get the source element and target element
         WebElement source = driver.findElement(By.xpath("//div[@id='draggable']"));
         WebElement target = driver.findElement(By.xpath("//div[@id='droppable']"));
         
         // message for console - checking execution flow of program
         System.out.println("opening page...perform drag and drop");
         Thread.sleep(3000);
+
+	// In case of Drag and Drop we use the Actions class 
         Actions act = new Actions(driver);
         
         // dragAndDrop is the method() of class Action
