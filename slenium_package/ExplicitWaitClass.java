@@ -26,6 +26,7 @@ public class ExplicitWaitClass {
       //Maximizes the browser window
      
       WebElement gmailLink;
+	// In case of explicit wait we locate a particular element
       gmailLink= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath( "//a[contains(text(),'Gmail')]")));
       gmailLink.click();
       //close browser
