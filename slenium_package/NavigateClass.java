@@ -3,15 +3,19 @@ package slenium_package;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+// In this code we navigate to different website using navigate method
+
 public class NavigateClass {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// set path of driver
 		
 	        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver1.exe");
 	      WebDriver  driver = new ChromeDriver();
 	        driver.get("https://www.facebook.com/");
+		// getTitle method will give me title in webpage
 	        System.out.println("this is " + driver.getTitle() + " website");
+		// getCurrentUrl method will give me url in webpage
 	        System.out.println("url is: " + driver.getCurrentUrl());
 	        // navigating to another site
 	        driver.navigate().to("http://www.instagram.com/");
