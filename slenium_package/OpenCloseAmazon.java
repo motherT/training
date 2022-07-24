@@ -2,17 +2,18 @@ package seleniumPackage;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
+// In this code we are trying open a amazon website in chromedriver browser
 public class OpenCloseAmazon {
 
 	public static void main(String[] args) {
 		
-	// setProperty method is used to set the path of driver from system location
+	// Set the path of driver 
 	System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe" );
-	// Create the object of the driver
+	// Create the object of the chromedriver browser 
         ChromeDriver driver = new ChromeDriver();
-	// Using driver object call the get method used for passing link.
+	// pass the link of website in get method 
         driver.get("http://www.amazon.com/");
-	// close method is used to close the driver 
+	// close method is used to close the chromedriver browser
         driver.close();
 	}
 
