@@ -37,7 +37,7 @@ public class CheckBox {
       System.out.println("wait 3 seconds and submit and close");
       submitButton.click();
 	
-	//Thread is a class in java used to hold a part of code for some given time using sleep method.
+      //Thread is a class in java used to hold a part of code for some given time using sleep method.
       Thread.sleep(3000);
       driver.close();
 	}
