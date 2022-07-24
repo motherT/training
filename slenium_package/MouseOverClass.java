@@ -5,12 +5,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+// In this code we trying to perform mouse over that means we are trying to move our mouse to element and get the details 
+ 
+
 public class MouseOverClass {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver1.exe");
+		// Set the path of chromeDriver browser
+		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
+		
+		// Intialize value to the chromeDriver browser
 		ChromeDriver driver = new ChromeDriver();
+		
+		// pass the link of website
 		 driver.get("https://www.amazon.com/");
 	        //Thread.sleep(3000);
 	        WebElement element = driver.findElement(By.xpath("//span[contains(text(),'Hello, Sign in')]")) ;
