@@ -11,26 +11,26 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class CheckBox {
 
 	public static void main(String[] args) throws InterruptedException {
-	// setProperty method is used to set the path of driver from system location
+	// Set the path of chromeDriver browser
 	System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 	
-	// Intialize value to the driver
+	// Intialize value to the chromeDriver browser
         WebDriver driver = new ChromeDriver();
 		
-	// Using driver object call the get method and pass the website link
+	// pass the link of website
 	driver.get("http://training.qaonlinetraining.com/testPage.php");
 		
 	// now we will save the locator of element in WebElement object 
 	WebElement checkboxBoat = driver.findElement(By.xpath("//input[@value='boat']"));
 	//  checkbox bike
       WebElement checkboxBike = driver.findElement(By.xpath("//input[@value='Bike']"));
-//      checkbox car
+       //    checkbox car
       WebElement checkboxCar = driver.findElement(By.xpath("//input[@value='car']")); // selected by-default
       // checkbox horse
       WebElement checkboxHorse = driver.findElement(By.xpath("//input[@value='horse']"));
       // submit button
       WebElement submitButton = driver.findElement(By.xpath("//input[@value='Send']"));
-//      selecting all options except car- selected by-default .The car element is clicked by default and value .So no need to perform click on the car element 
+      // selecting all options except car- selected by-default .The car element is clicked by default and value .So no need to perform click on the car element 
       checkboxBoat.click();
       checkboxBike.click();
       checkboxHorse.click();
