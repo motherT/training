@@ -11,18 +11,18 @@ import org.openqa.selenium.support.ui.Select;
 public class Dropdown {
 
 	public static void main(String[] args) {
-		// setProperty method is used to set the path of driver from system location
+		// Set the path of chromeDriver browser
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 		
-		// Intialize value to the driver
+		// Intialize value to the chromeDriver browser
         	WebDriver driver = new ChromeDriver();
-		// Using driver object call the get method and pass the website link
+		// pass the link of website
 	        driver.get("http://training.qaonlinetraining.com/testPage.php");
 		
-		// Use the select class in case of dropdown and locate the dropdown element and pass the locator in constructor
+		// Select class is used in case of dropdown and pass the value of element in constructor
 	        Select countrySelect = new Select(driver.findElement(By.name("country")));
 	        
-		// using the select object call selectByVisibleText method and select the text in dropdown
+		// using the countrySelect call selectByVisibleText method and select the text in dropdown
 	        countrySelect.selectByVisibleText("USA"); //options [USA,India, Ethiopia,France]
 	        //or
 	        countrySelect.selectByVisibleText("France");
