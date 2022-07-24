@@ -5,15 +5,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+// In this code we are trying to see different types of alert avialable in webpage 
+// Test each alert button one by one and see the output 
+
+
 public class AlertExample {
 
 	public static void main(String[] args) throws InterruptedException {
-		// setProperty method is used to set the path of driver from system location
+		// Set the path of chromeDriver browser
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 		
-		// Intialize value to the driver
+		// Intialize value to the chromeDriver browser
 		ChromeDriver driver = new ChromeDriver();
-		// Using driver object call the get method and pass the website link
+		
+		// pass the link of website
 	        driver.get("http://training.qaonlinetraining.com/testPage.php");
 	        
 		// Locate the alert button and perform click 
