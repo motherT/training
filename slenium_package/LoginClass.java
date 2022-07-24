@@ -12,12 +12,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class LoginClass {
 	
 	public static void main(String[] args) {
-	// Create a object of WebDriver 
+	
 	WebDriver driver;
-		
-	// setProperty method is used to set the path of driver from system location
+	// Set the path of chromeDriver browser
         System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
-	// Intialize value to the driver
+	// Intialize value to the chromebrowser driver
         driver = new ChromeDriver();
 	// pass the link of driver 
         driver.get("https://admin-demo.nopcommerce.com/login");
