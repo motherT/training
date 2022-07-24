@@ -5,6 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+// In this code we are  performing drag and drop through automation
+// Locate the source and target element and perfrom drag and drop using this element
+
 public class DragAndDrop {
 
 	public static void main(String[] args) throws InterruptedException {
