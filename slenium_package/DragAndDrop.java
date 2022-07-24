@@ -12,10 +12,10 @@ public class DragAndDrop {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver1.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		
-		driver.get("http://jqueryui.com/droppable/");
+	driver.get("http://jqueryui.com/droppable/");
         // focussing inside the iframe - Frame WebElement
         driver.switchTo().frame(0);
         // using xpath get the source element and target element
