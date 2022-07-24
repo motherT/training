@@ -2,17 +2,17 @@ package seleniumPackage;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
-// In this code we are trying open a google chrome website using get method
+// In this code we are trying open a google chrome website in chromedriver browser
 
 
 public class OpenChrome {
 
 	public static void main(String[] args) {
-		// setProperty method is used to set the path of driver from system location 
+		// Set the path of driver 
 		  System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe" );
-		// Create the object of the driver 
+		// Create the object of the chromedriver browser 
 	        ChromeDriver driver = new ChromeDriver();
-		// Using driver object call the get method used for passing link.
+		// pass the link of website in get method 
 	        driver.get("http://www.google.com/");
 	}
 
