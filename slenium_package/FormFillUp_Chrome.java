@@ -15,7 +15,7 @@ public static void main(String[] args) {
 	
     // In WebDriver we can intialize value of all drivers.So we can say WebDriver is universal class inside which all browser are defined.
     WebDriver driver;
-  // Set the path of driver
+  // Set the path of chromeDriver browser
     System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 	
     // Create the object of the chromeBrowser driver
@@ -24,19 +24,19 @@ public static void main(String[] args) {
     driver.get("http://www.training.qaonlinetraining.com/testPage.php");
     
     // sending text to the input box in the web form--------------
-    // Locate and filling the name section
+    // Locate the element using name locator  and pass  the value to the name section using sendKeys method
     driver.findElement(By.name("name")).sendKeys("DemoName");
  
-    //Locate and fill the  E mail section
+    //Locate the element using name locator  and pass  the value to  E mail section using sendKeys method 
     driver.findElement(By.name("email")).sendKeys("DemoEmail@demo.com");
     
-    //Locate and fill the  Website section
+    //Locate the element using name locator  and pass  the value to  Website section using sendKeys method
     driver.findElement(By.name("website")).sendKeys("www.demosite.com");
     
-    // Locate and fill the Comment section
+    ///Locate the element using name locator  and pass  the value to  Comment section using sendKeys method
     driver.findElement(By.name("comment")).sendKeys("demo comment");
     
-    //Locate and Click on Send Button
+   ///Locate the element using name locator  and perform click on submit button
     driver.findElement(By.name("submit")).click();
    
 }
