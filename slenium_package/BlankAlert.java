@@ -4,6 +4,8 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+// In this code we are trying to click on signIn button without passing the email and password value 
+// Test each alert button one by one and see the output 
 
 public class BlankAlert {
 
