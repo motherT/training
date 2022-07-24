@@ -11,22 +11,20 @@ public class TagName {
 
 	// In this code we are trying to fetch all the links in webpage 
 	// Locate the elements using tag name 
-	// Fetch the link one by one using loop 
-	//Count the number of link in webpage 
+	// Fetch the link details from <a> tag and display in output 
+	//Count the number of link avialable in webpage 
 	public static void main(String[] args) {
-		// Create object of WebDriver class
+
 		 WebDriver driver;
-	        
-		// setProperty method is used to set the path of driver from system location
+	        // Set the path of chromeDriver browser
 	        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
-		// Intialize value to the driver
+		// Intialize value to the chromeDriver browser
 	        driver = new ChromeDriver();
-		
-		// pass the link of driver
+		// pass the link of website
 	     	 driver.get("https://www.itlearn360.com/");
 	        int count = 0;
 	        // Counting links of itlearn360 site , located by tagName
-	        // using Findelements
+	        // FindElements is used to get mutiple elements 
 	        List<WebElement> allLinks = driver.findElements(By.tagName("a"));
 	        for (WebElement link : allLinks) {
 	            // print the each url 
