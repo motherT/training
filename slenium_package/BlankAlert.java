@@ -20,14 +20,13 @@ public class BlankAlert {
 		
 		// Locate the signIn button and click the button without passing the credentials 
 	        driver.findElement(By.name("proceed")).click();
-	        // Calling Alert class - creating alert object
+	        // Use Alert class in case of alert and to switch from webpage to alert box call switchTo() and alert()
 	        Alert alert = driver.switchTo().alert();
 	        Thread.sleep(3000);
 		
 		// get the text of alert box
 	        System.out.println(alert.getText());
 	        alert.accept();
-	        //alert.sendKeys("a");
 	        driver.close();
 	}
 
