@@ -5,23 +5,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-
+// In this code we are trying to pass the value in input box and click the send button
+// Locate the element and pass the value to input box
+//Click the send button and submit the value
 
 public class FormFillUp_Chrome {
 	
-	// In this code we are trying to pass the value in input box and click thesend button
-	// Locate the element and pass the value to input box
-	
-	//Click the send button and submit the value
-	
 public static void main(String[] args) {
 	
-    // Create a object of WebDriver 
+    // In WebDriver we can intialize value of all drivers.So we can say WebDriver is universal class inside which all browser are defined.
     WebDriver driver;
-   // setProperty method is used to set the path of driver from system location
+  // Set the path of driver
     System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 	
-    // Create the object of the driver
+    // Create the object of the chromeBrowser driver
     driver = new ChromeDriver();
     // opening website for form fill up
     driver.get("http://www.training.qaonlinetraining.com/testPage.php");
