@@ -19,7 +19,7 @@ public class Dropdown {
 		// pass the link of website
 	        driver.get("http://training.qaonlinetraining.com/testPage.php");
 		
-		// Select class is used in case of dropdown and pass the value of element in constructor
+		// Select class is used in case of dropdown and pass the value of element .
 	        Select countrySelect = new Select(driver.findElement(By.name("country")));
 	        
 		// using the countrySelect call selectByVisibleText method and select the text in dropdown
@@ -40,6 +40,7 @@ public class Dropdown {
 	        //Click on Send Button
 	        driver.findElement(By.name("submit")).click();
 	        System.out.println("Form Fill-up Succesfull");
+		// quit method close all the browser open in screen
 	        driver.quit();
 	}
 
