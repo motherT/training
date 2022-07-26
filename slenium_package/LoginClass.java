@@ -13,13 +13,13 @@ public class LoginClass {
 	
 	public static void main(String[] args) {
 	
-	WebDriver driver;
+	WebDriver browserDriver;
 	// Set the path of chromeDriver browser
         System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 	// Intialize value to the chromebrowser driver
-        driver = new ChromeDriver();
+        browserDriver = new ChromeDriver();
 	// pass the link of driver 
-        driver.get("https://admin-demo.nopcommerce.com/login");
+        browserDriver.get("https://admin-demo.nopcommerce.com/login");
        
 	// Locate the email text box and clear the text box
         WebElement email=driver.findElement(By.id("Email"));
