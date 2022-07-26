@@ -11,7 +11,7 @@ public class ExplicitWaitClass {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
-        ChromeDriver driver = new ChromeDriver();
+        ChromeDriver browserDriver = new ChromeDriver();
         
       
       
@@ -22,7 +22,7 @@ public class ExplicitWaitClass {
       WebDriverWait wait=new WebDriverWait(driver, 20);
       String SiteTitle = "Google";
       // launch Chrome and redirect it to the Base URLWeb
-      driver.get("http://google.com" );
+      browserDriver.get("http://google.com" );
       //Maximizes the browser window
      
       WebElement gmailLink;
@@ -30,7 +30,7 @@ public class ExplicitWaitClass {
       gmailLink= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath( "//a[contains(text(),'Gmail')]")));
       gmailLink.click();
       //close browser
-   driver.quit();
+   browserDriver.quit();
 
 	}
 
