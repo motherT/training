@@ -8,16 +8,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.DataProvider;
 
 public class DataProviderClass {
-	WebDriver driver;
+	WebDriver browserDriver;
 	 @Test(dataProvider = "dp")
 	    public void checking(String userName, String passWord, String msg) throws InterruptedException {
-	        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver1.exe");
+	        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 	        // create object name driver of type ChromeDriver
-	        driver = new ChromeDriver();
-	        driver.get("https://admin-demo.nopcommerce.com/login");
-	        WebElement username = driver.findElement(By.name("Email"));
-	        WebElement password = driver.findElement(By.name("Password"));
-	        WebElement submitBtn = driver.findElement(By.xpath("/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button"));
+	        browserDriver = new ChromeDriver();
+	        browserDriver.get("https://admin-demo.nopcommerce.com/login");
+	        WebElement username = browserDriver.findElement(By.name("Email"));
+	        WebElement password = browserDriver.findElement(By.name("Password"));
+	        WebElement submitBtn = browserDriver.findElement(By.xpath("/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button"));
 	        username.clear();
 	        username.sendKeys(userName);
 	        password.clear();
