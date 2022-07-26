@@ -22,17 +22,17 @@ public class LoginClass {
         browserDriver.get("https://admin-demo.nopcommerce.com/login");
        
 	// Locate the email text box and clear the text box
-        WebElement email=driver.findElement(By.id("Email"));
+        WebElement email=browserDriver.findElement(By.id("Email"));
         email.clear();
 	// Locate the password text box and clear the text box
-        WebElement password=driver.findElement(By.id("Password"));
+        WebElement password=browserDriver.findElement(By.id("Password"));
         password.clear();
 	// send values in email box
         email.sendKeys("admin@yourstore.com");
 	// send values in password box
         password.sendKeys("admin");
 	// Locate the signIn button 
-        WebElement button=driver.findElement(By.className("button-1"));
+        WebElement button=browserDriver.findElement(By.className("button-1"));
 	// submit the value
         button.submit();
 	}
