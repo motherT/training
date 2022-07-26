@@ -32,7 +32,7 @@ public class AssertAfterLogin {
 	    public void assertHomePage() throws InterruptedException {
 	        System.out.println("--using Assert - Checking Homepage Text else, this test will fail");
 	        String expectedTextFromPage="Dashboard";
-	        String actualTextFromHomePage= driver.findElement(By.xpath("/html/body/div[3]/div[1]/div[1]/h1")).getText();
+	        String actualTextFromHomePage= browserDriver.findElement(By.xpath("/html/body/div[3]/div[1]/div[1]/h1")).getText();
 	        assertEquals(actualTextFromHomePage, expectedTextFromPage);
 	        Thread.sleep(2000);
 	    }
