@@ -13,27 +13,27 @@ public class DragAndDrop {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver();
+		ChromeDriver browserDriver = new ChromeDriver();
 		
-	driver.get("http://jqueryui.com/droppable/");
+	browserDriver.get("http://jqueryui.com/droppable/");
         // focussing inside the iframe - Frame WebElement
-        driver.switchTo().frame(0);
+        browserDriver.switchTo().frame(0);
         // using xpath get the source element and target element
-        WebElement source = driver.findElement(By.xpath("//div[@id='draggable']"));
-        WebElement target = driver.findElement(By.xpath("//div[@id='droppable']"));
+        WebElement source = browserDriver.findElement(By.xpath("//div[@id='draggable']"));
+        WebElement target = browserDriver.findElement(By.xpath("//div[@id='droppable']"));
         
         // message for console - checking execution flow of program
         System.out.println("opening page...perform drag and drop");
         Thread.sleep(3000);
 
 	// In case of Drag and Drop we use the Actions class 
-        Actions act = new Actions(driver);
+        Actions act = new Actions(browserDriver);
         
         // dragAndDrop is the method() of class Action
         act.dragAndDrop(source, target).build().perform();
         System.out.println("drag N drop Done...");
         Thread.sleep(3000);
-        driver.close();
+        browserDriver.close();
 
 	}
 
