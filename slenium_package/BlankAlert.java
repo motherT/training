@@ -11,23 +11,23 @@ public class BlankAlert {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		 WebDriver driver;
-		// setProperty method is used to set the path of driver from system location
+		 WebDriver browserDriver;
+		// Set the path driver 
 	        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
-	        driver = new ChromeDriver();
-	        // pass url
-	        driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
+	        browserDriver = new ChromeDriver();
+	        // pass url of website 
+	        browserDriver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		
 		// Locate the signIn button and click the button without passing the credentials 
-	        driver.findElement(By.name("proceed")).click();
+	        browserDriver.findElement(By.name("proceed")).click();
 	        // Use Alert class in case of alert and to switch from webpage to alert box call switchTo() and alert()
-	        Alert alert = driver.switchTo().alert();
+	        Alert alert = browserDriver.switchTo().alert();
 	        Thread.sleep(3000);
 		
 		// get the text of alert box
 	        System.out.println(alert.getText());
 	        alert.accept();
-	        driver.close();
+	        browserDriver.close();
 	}
 
 }
