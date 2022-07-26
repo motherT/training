@@ -15,9 +15,9 @@ public class Dropdown {
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 		
 		// Intialize value to the chromeDriver browser
-        	WebDriver driver = new ChromeDriver();
+        	WebDriver browserDriver = new ChromeDriver();
 		// pass the link of website
-	        driver.get("http://training.qaonlinetraining.com/testPage.php");
+	        browserDriver.get("http://training.qaonlinetraining.com/testPage.php");
 		
 		// Select class is used in case of dropdown and pass the value of element .
 	        Select countrySelect = new Select(driver.findElement(By.name("country")));
@@ -38,10 +38,10 @@ public class Dropdown {
 	        System.out.println("selectByVisibleText(\"Database");
 	        
 	        //Click on Send Button
-	        driver.findElement(By.name("submit")).click();
+	        browserDriver.findElement(By.name("submit")).click();
 	        System.out.println("Form Fill-up Succesfull");
 		// quit method close all the browser open in screen
-	        driver.quit();
+	        browserDriver.quit();
 	}
 
 }
