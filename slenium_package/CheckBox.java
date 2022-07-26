@@ -15,21 +15,21 @@ public class CheckBox {
 	System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 	
 	// Intialize value to the chromeDriver browser
-        WebDriver driver = new ChromeDriver();
+        WebDriver browserDriver = new ChromeDriver();
 		
 	// pass the link of website
-	driver.get("http://training.qaonlinetraining.com/testPage.php");
+	browserDriver.get("http://training.qaonlinetraining.com/testPage.php");
 		
 	// now we will save the locator of element in WebElement object 
-	WebElement checkboxBoat = driver.findElement(By.xpath("//input[@value='boat']"));
+	WebElement checkboxBoat = browserDriver.findElement(By.xpath("//input[@value='boat']"));
 	//  checkbox bike
-      WebElement checkboxBike = driver.findElement(By.xpath("//input[@value='Bike']"));
+      WebElement checkboxBike = browserDriver.findElement(By.xpath("//input[@value='Bike']"));
        //    checkbox car
-      WebElement checkboxCar = driver.findElement(By.xpath("//input[@value='car']")); // selected by-default
+      WebElement checkboxCar = browserDriver.findElement(By.xpath("//input[@value='car']")); // selected by-default
       // checkbox horse
-      WebElement checkboxHorse = driver.findElement(By.xpath("//input[@value='horse']"));
+      WebElement checkboxHorse = browserDriver.findElement(By.xpath("//input[@value='horse']"));
       // submit button
-      WebElement submitButton = driver.findElement(By.xpath("//input[@value='Send']"));
+      WebElement submitButton = browserDriver.findElement(By.xpath("//input[@value='Send']"));
       // selecting all options except car- selected by-default .The car element is clicked by default and value .So no need to perform click on the car element 
       checkboxBoat.click();
       checkboxBike.click();
@@ -39,7 +39,7 @@ public class CheckBox {
 	
       //Thread is a class in java used to hold a part of code for some given time using sleep method.
       Thread.sleep(3000);
-      driver.close();
+      browserDriver.close();
 	}
 
 }
