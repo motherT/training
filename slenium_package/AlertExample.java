@@ -16,15 +16,15 @@ public class AlertExample {
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 		
 		// Intialize value to the chromeDriver browser
-		ChromeDriver driver = new ChromeDriver();
+		ChromeDriver browserDriver = new ChromeDriver();
 		
 		// pass the link of website
-	        driver.get("http://training.qaonlinetraining.com/testPage.php");
+	        browserDriver.get("http://training.qaonlinetraining.com/testPage.php");
 	        
 		// Locate the alert button and perform click 
-	        driver.findElement(By.id("alert")).click();
+	        browserDriver.findElement(By.id("alert")).click();
 		// Use Alert class in case of alert and to switch from webpage to alert box call switchTo() and alert()
-	        Alert alert = driver.switchTo().alert();
+	        Alert alert = browserDriver.switchTo().alert();
 		
 		// to get the text from the alert box use getText()
 	        System.out.println(alert.getText());
@@ -35,16 +35,16 @@ public class AlertExample {
 	        
 	        // example 2 - dismiss(You pressed Cancel!)
 		//The example is same to 1st one here we cancel the alert so we use dismiss()
-	        driver.findElement(By.id("confirm")).click();
-	        Alert alert1 = driver.switchTo().alert();
+	        browserDriver.findElement(By.id("confirm")).click();
+	        Alert alert1 = browserDriver.switchTo().alert();
 	        System.out.println(alert1.getText());
 	        Thread.sleep(6000);
 	        alert1.dismiss();
 	        
 	        // example 3 - accept and Type(Hello Mr. Bond! How are you today?)
 		// In this example we are trying to send value to the input box inside alert 
-	        driver.findElement(By.id("prompt")).click();
-	        Alert alert2 = driver.switchTo().alert();
+	        browserDriver.findElement(By.id("prompt")).click();
+	        Alert alert2 = browserDriver.switchTo().alert();
 	        System.out.println(alert2.getText());
 	        Thread.sleep(6000);
 		// Use sendkeys() to send value to input box in alert box
