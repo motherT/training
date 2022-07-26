@@ -17,18 +17,18 @@ public class RadioButton {
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 		
 		// Intialize value to the chromeDriver browser
-       		 WebDriver driver = new ChromeDriver();
+       		 WebDriver browserDriver = new ChromeDriver();
 		// pass the link of website 
-	        driver.get("http://training.qaonlinetraining.com/testPage.php");
+	        browserDriver.get("http://training.qaonlinetraining.com/testPage.php");
 	        // now we will save the locator of element in WebElement object .
 	        //radio option female
-	        WebElement radioButtonFemale = driver.findElement(By.xpath("//input[@value='female']"));
+	        WebElement radioButtonFemale = browserDriver.findElement(By.xpath("//input[@value='female']"));
 		// radio option male
-	        WebElement radioButtonMale = driver.findElement(By.xpath("//input[@value='male']"));
+	        WebElement radioButtonMale = browserDriver.findElement(By.xpath("//input[@value='male']"));
 		// radio option Other
-	        WebElement radioButtonOther = driver.findElement(By.xpath("//input[@value='Other']"));
+	        WebElement radioButtonOther = browserDriver.findElement(By.xpath("//input[@value='Other']"));
 	        // submit button
-	        WebElement submitButton = driver.findElement(By.xpath("//input[@value='Send']"));
+	        WebElement submitButton = browserDriver.findElement(By.xpath("//input[@value='Send']"));
 		
 		// perform click on the element in webpage
 	        radioButtonFemale.click();
