@@ -15,17 +15,17 @@ public class TagName {
 	//Count the number of link avialable in webpage 
 	public static void main(String[] args) {
 
-		 WebDriver driver;
+		 WebDriver browserDriver;
 	        // Set the path of chromeDriver browser
 	        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 		// Intialize value to the chromeDriver browser
-	        driver = new ChromeDriver();
+	        browserDriver = new ChromeDriver();
 		// pass the link of website
-	     	 driver.get("https://www.itlearn360.com/");
+	     	 browserDriver.get("https://www.itlearn360.com/");
 	        int count = 0;
 	        // Counting links of itlearn360 site , located by tagName
 	        // FindElements is used to get mutiple elements 
-	        List<WebElement> allLinks = driver.findElements(By.tagName("a"));
+	        List<WebElement> allLinks = browserDriver.findElements(By.tagName("a"));
 	        for (WebElement link : allLinks) {
 	            // print the each url 
 	            System.out.println(link.getAttribute("href"));
@@ -37,7 +37,7 @@ public class TagName {
 	        System.out.println("total number of links present: "+count);
 		
 		// close the driver
-	        driver.close();
+	        browserDriver.close();
 	}
 
 }
