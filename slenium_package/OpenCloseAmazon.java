@@ -10,11 +10,11 @@ public class OpenCloseAmazon {
 	// Set the path of driver 
 	System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe" );
 	// Create the object of the chromedriver browser 
-        ChromeDriver driver = new ChromeDriver();
+        ChromeDriver browserDriver = new ChromeDriver();
 	// pass the link of website in get method 
-        driver.get("http://www.amazon.com/");
+        browserDriver.get("http://www.amazon.com/");
 	// close method is used to close the chromedriver browser
-        driver.close();
+        browserDriver.close();
 	}
 
 }
