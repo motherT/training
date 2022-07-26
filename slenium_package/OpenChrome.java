@@ -11,9 +11,9 @@ public class OpenChrome {
 		// Set the path of driver 
 		  System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe" );
 		// Create the object of the chromedriver browser 
-	        ChromeDriver driver = new ChromeDriver();
+	        ChromeDriver browserDriver = new ChromeDriver();
 		// pass the link of website in get method 
-	        driver.get("http://www.google.com/");
+	        browserDriver.get("http://www.google.com/");
 	}
 
 }
