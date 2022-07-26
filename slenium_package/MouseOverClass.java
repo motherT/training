@@ -15,21 +15,21 @@ public class MouseOverClass {
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 		
 		// Intialize value to the chromeDriver browser
-		ChromeDriver driver = new ChromeDriver();
+		ChromeDriver browserDriver = new ChromeDriver();
 		
 		// pass the link of website
-		 driver.get("https://www.amazon.com/");
+		 browserDriver.get("https://www.amazon.com/");
 	        //Thread.sleep(3000);
-	        WebElement element = driver.findElement(By.xpath("//span[contains(text(),'Hello, Sign in')]")) ;
+	        WebElement element = browserDriver.findElement(By.xpath("//span[contains(text(),'Hello, Sign in')]")) ;
 	        
 	        // Action class - action object -- passing driver information as parameter
-	        Actions action = new Actions(driver);
+	        Actions action = new Actions(browserDriver);
 	        System.out.println("Mouse is over the - HELLO, SIGN IN - option");
 	        
 	        // moveToElement is the method() of class Action
 	        action.moveToElement(element).build().perform();
 	        //Thread.sleep(3000);
-	        driver.findElement(By.xpath("//span[contains(text(),'Create a List')]")).click();
+	        browserDriver.findElement(By.xpath("//span[contains(text(),'Create a List')]")).click();
 	        System.out.println("Clicked");
 
 	}
