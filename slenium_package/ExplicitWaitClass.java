@@ -19,7 +19,7 @@ public class ExplicitWaitClass {
 //      It gives better options than implicit wait as it waits for dynamically loaded Ajax elements.
 //      
       
-      WebDriverWait wait=new WebDriverWait(driver, 20);
+      WebDriverWait wait=new WebDriverWait(browserDriver, 20);
       String SiteTitle = "Google";
       // launch Chrome and redirect it to the Base URLWeb
       browserDriver.get("http://google.com" );
