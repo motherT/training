@@ -14,7 +14,7 @@ public class PriorityTest {
 //        System.setProperty("webdriver.gecko.driver", "C:\\Users\\Administrator\\Documents\\drivers\\geckodriver.exe");
 //        browserDriver = new FirefoxDriver();
         System.out.println("Open /close  amazon.com in chrome browser");
-        driver.get("http://www.amazon.com/");
+        browserDriver.get("http://www.amazon.com/");
         Thread.sleep(2000);
         browserDriver.close();
     }
