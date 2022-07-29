@@ -28,7 +28,7 @@ public class BeforeAfterClass {
     @BeforeTest
     public void beforeTest() {
         System.out.println("--@beforeTest, set the browser, maximise the window");
-        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver1.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
         browserDriver = new ChromeDriver();
         browserDriver.manage().window().maximize();
     }
