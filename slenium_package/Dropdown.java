@@ -20,7 +20,7 @@ public class Dropdown {
 	        browserDriver.get("http://training.qaonlinetraining.com/testPage.php");
 		
 		// Select class is used in case of dropdown and pass the value of element .
-	        Select countrySelect = new Select(driver.findElement(By.name("country")));
+	        Select countrySelect = new Select(browserDriver.findElement(By.name("country")));
 	        
 		// using the countrySelect call selectByVisibleText method and select the text in dropdown
 	        countrySelect.selectByVisibleText("USA"); //options [USA,India, Ethiopia,France]
@@ -28,7 +28,7 @@ public class Dropdown {
 	        countrySelect.selectByVisibleText("France");
 	        
 	        //Same explanation for skill dropdown
-	        Select skillSelect = new Select(driver.findElement(By.name("skill")));
+	        Select skillSelect = new Select(browserDriver.findElement(By.name("skill")));
 	        //using skillSelect to select menu options -- Programming
 	        skillSelect.selectByVisibleText("Programming");
 	        System.out.println("selectByVisibleText(\"Programming");
