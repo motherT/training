@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-// In this code we are trying to open different website using Test annotation
+// In this code we are trying to open different website using Test annotation and generate the test report in each case
 public class OpenWebsites {
 WebDriver driver;
 	@Test
