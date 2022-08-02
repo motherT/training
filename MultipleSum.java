@@ -1,5 +1,7 @@
 package javaPackage;
 
+
+// In this code we are trying to two add 3 numbers and print the output in console window 
 public class MultipleSum {
 
 	public static void main(String[] args) {
