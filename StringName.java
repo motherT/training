@@ -1,5 +1,6 @@
 package javaPackage;
 
+// In this code we are trying to define a String type of value and print in console window 
 public class StringName {
 
 	public static void main(String[] args) {
