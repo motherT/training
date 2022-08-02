@@ -5,9 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-// In this code we are trying to pass the value in input box and click the send button
-// Locate the element and pass the value to input box
-//Click the send button and submit the value
+// In this code we are trying to pass value in input box and click the send button
+// Here we need to locate all input elements using name locators and send values to each this input box 
+// send values using sendkeys method and click method to perform click on elements 
 
 public class FormFillUp_Chrome {
 	
@@ -18,9 +18,9 @@ public static void main(String[] args) {
   // Set the path of chromeDriver browser
     System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 	
-    // Create the object of the chromeBrowser driver
+    // Create the reference of the chromedriver browser
     browserDriver = new ChromeDriver();
-    // opening website for form fill up
+    // get method helps to load the web pages in the browser that we pass in a given parameter.
     browserDriver.get("http://www.training.qaonlinetraining.com/testPage.php");
     
     // sending text to the input box in the web form--------------
