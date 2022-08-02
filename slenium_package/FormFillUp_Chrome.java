@@ -13,7 +13,7 @@ public class FormFillUp_Chrome {
 	
 public static void main(String[] args) {
 	
-    // In WebDriver we can intialize value of all drivers.So we can say WebDriver is universal class inside which all browser are defined.
+    // In WebDriver we can intialize value of all drivers.WebDriver is interface that helps in implementing  different browser values.
     WebDriver browserDriver;
   // Set the path of chromeDriver browser
     System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
