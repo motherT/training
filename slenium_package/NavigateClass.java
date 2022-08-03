@@ -14,26 +14,26 @@ public class NavigateClass {
 	      WebDriver  browserDriver = new ChromeDriver();
 	        browserDriver.get("https://www.facebook.com/");
 		// getTitle method will give me title in webpage
-	        System.out.println("this is " + driver.getTitle() + " website");
+	        System.out.println("this is " + browserDriver.getTitle() + " website");
 		// getCurrentUrl method will give me url in webpage
-	        System.out.println("url is: " + driver.getCurrentUrl());
+	        System.out.println("url is: " + browserDriver.getCurrentUrl());
 	        // navigating to another site
 	        browserDriver.navigate().to("http://www.instagram.com/");
-	        System.out.println("this is " + driver.getTitle() + " website");
-	        System.out.println("url is: " + driver.getCurrentUrl());
+	        System.out.println("this is " + browserDriver.getTitle() + " website");
+	        System.out.println("url is: " + browserDriver.getCurrentUrl());
 	        // navigating to another site
 	        browserDriver.navigate().to("http://www.twitter.com/");
-	        System.out.println("this is " + driver.getTitle() + " website");
-	        System.out.println("url is: " + driver.getCurrentUrl());
+	        System.out.println("this is " + browserDriver.getTitle() + " website");
+	        System.out.println("url is: " + browserDriver.getCurrentUrl());
 	        // navigating back to gmail .com
 	        browserDriver.navigate().back();
-	        System.out.println("this is " + driver.getTitle() + " website");
-	        System.out.println("url is: " + driver.getCurrentUrl());
+	        System.out.println("this is " + browserDriver.getTitle() + " website");
+	        System.out.println("url is: " + browserDriver.getCurrentUrl());
 	        // navigating back to google .com
 	        browserDriver.navigate().back();
-	        driver.navigate().forward();
-	        System.out.println("this is " + driver.getTitle() + " website");
-	        System.out.println("url is: " + driver.getCurrentUrl());
+	        browserDriver.navigate().forward();
+	        System.out.println("this is " + browserDriver.getTitle() + " website");
+	        System.out.println("url is: " + browserDriver.getCurrentUrl());
 	        browserDriver.close();
 
 	}
