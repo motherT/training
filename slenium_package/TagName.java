@@ -7,12 +7,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class TagName {
 
-	// In this code we are trying to fetch all the links in webpage 
-	// Locate the elements using tag name 
-	// Fetch the link details from <a> tag and display in output 
-	//Count the number of link avialable in webpage 
+// In this code we are trying to fetch all the links in webpage and count the links in all
+// Locate all the elements with link using tagName locator
+// Fetch the link details from <a> tag and display in output and also count the number of links.
+
+public class TagName {
 	public static void main(String[] args) {
 
 		 WebDriver browserDriver;
