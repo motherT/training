@@ -10,7 +10,7 @@ public class NavigateClass {
 	public static void main(String[] args) {
 		// set path of driver
 		
-	        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver1.exe");
+	        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 	      WebDriver  browserDriver = new ChromeDriver();
 	        browserDriver.get("https://www.facebook.com/");
 		// getTitle method will give me title in webpage
