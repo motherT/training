@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 // In this code we are trying to pass value in input box and click the send button
-// Here we need to locate all input elements using name locators and send values to each this input box 
+// Here we need to locate all input elements using name locators and send values to all input box 
 // send values using sendkeys method and click method to perform click on elements 
 
 public class FormFillUp_Chrome {
