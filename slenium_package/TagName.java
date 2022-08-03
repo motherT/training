@@ -18,13 +18,14 @@ public class TagName {
 		 WebDriver browserDriver;
 	        // Set the path of chromeDriver browser
 	        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
-		// Intialize value to the chromeDriver browser
+		// Create the reference of the chromedriver browser
 	        browserDriver = new ChromeDriver();
-		// pass the link of website
+		// get method helps to load the web pages in the browser that we pass in a given parameter.
 	     	 browserDriver.get("https://www.itlearn360.com/");
+		// Intialize value to a variable 
 	        int count = 0;
-	        // Counting links of itlearn360 site , located by tagName
-	        // FindElements is used to get mutiple elements 
+	        
+	        // FindElements is used to get multiple elements 
 	        List<WebElement> allLinks = browserDriver.findElements(By.tagName("a"));
 	        for (WebElement link : allLinks) {
 	            // print the each url 
