@@ -15,7 +15,7 @@ public class AssertAfterLogin {
 	 @Test
 	    public void performLogin() throws InterruptedException {
 	        System.out.println("Performing Login and wait for 2 seconds");
-	        driver.get("https://admin-demo.nopcommerce.com/login");
+	        browserDriver.get("https://admin-demo.nopcommerce.com/login");
 	        WebElement username = browserDriver.findElement(By.name("Email"));
 	        WebElement password = browserDriver.findElement(By.name("Password"));
 	        WebElement submitBtn = browserDriver.findElement(By.xpath("/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button"));
@@ -40,7 +40,7 @@ public class AssertAfterLogin {
 	@BeforeTest
     public void beforeTest() {
         System.out.println("--@beforeTest, set the browser, maximise the window");
-        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver1.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
         browserDriver = new ChromeDriver();
         browserDriver.manage().window().maximize();
     }
