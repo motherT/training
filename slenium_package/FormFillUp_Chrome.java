@@ -1,6 +1,6 @@
 // In this selenium code ,we will pass value to input text box in form and perform click on send button
 // Steps to perform in form 
-//1. setup the property of chromedriver because we will perform testing of login process through chrome web browser.
+//1. setup the property of chromedriver because we will perform testing login form through chrome web browser.
 // 2. Initialize Webdriver object through ChromeDriver class.
 // 3. Open form page of http://www.training.qaonlinetraining.com/testPage.php
 // 4. Locate Name section using name locator and send values to the the section
