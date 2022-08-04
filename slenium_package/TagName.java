@@ -1,16 +1,18 @@
+// In this script we are fetching the link in webpage 
+// Steps to perform 
+//1. setup the property of chromedriver because we will perform testing login form through chrome web browser.
+//2. Initialize Webdriver object through ChromeDriver class.
+//3. Open website link https://www.itlearn360.com/.
+//4. Intialize value to variable to keep count of number of links in webpage 
+//5. List all the tagName in one place.
+
 package slenium_package;
 
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-
-// In this code we are trying to fetch all the links in webpage and count the links in all
-// Locate all the elements with link using tagName locator
-// Fetch the link details from <a> tag and display in output and also count the number of links.
 
 public class TagName {
 	public static void main(String[] args) {
