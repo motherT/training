@@ -24,7 +24,7 @@ public class RadioButton {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		// 1. setup the property of chromedriver because we will perform testing of login process through chrome web browser.
+		// 1. setup the property of chromedriver because we will perform radio button testing through chrome web browser.
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 		
 		// 2. Initialize Webdriver object through ChromeDriver class.
