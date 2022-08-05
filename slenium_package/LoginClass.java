@@ -13,7 +13,6 @@
 // 11. Submit the button.
 // 12. Close the web browser.
 package slenium_package;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,11 +22,11 @@ public class LoginClass {
 	
 	public static void main(String[] args) {
 	//Declare webdriver interface reference
-	WebDriver browserDriver;
+	WebDriver browserObject;
 	// 1. setup the property of chromedriver because we will perform testing of login process through chrome web browser.
         System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 	// 2. Initialize Webdriver object through ChromeDriver class.
-        browserDriver = new ChromeDriver();
+        browserObject = new ChromeDriver();
 	// 3. Open login page of https://admin-demo.nopcommerce.com/login
         browserDriver.get("https://admin-demo.nopcommerce.com/login");
        
