@@ -5,7 +5,7 @@
 // 3. Open the web page https://www.amazon.com/
 // 4. Thread.sleep is used to hold the part of code for given time limit. In this case take mouse over the thread and add Interrupted exception to this method
 // 5. Get the reference of element to mouse over.
-// 6. In case of dropdown we use Actions class.Create refernce and pass the driver to the reference
+// 6. In case of mouse Over we use Actions class.Create refernce and pass the driver to the reference
 // 7. Using the action reference call the moveToElement method and pass  element to mouse over
 // 8. Select a element from the pop up box and perform click
 // 9. Close the browser
@@ -38,7 +38,7 @@ public class MouseOverClass {
 	        
 		
 	      
-		// 6. In case of dropdown we use Actions class.Create refernce and pass the driver to the reference
+		// 6. In case of Mouse Over we use Actions class.Create refernce and pass the driver to the reference
 	        Actions action = new Actions(browserDriver);
 	        System.out.println("Mouse is over the - HELLO, SIGN IN - option");
 	        
