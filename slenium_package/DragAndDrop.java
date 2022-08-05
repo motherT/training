@@ -1,7 +1,7 @@
 // In this selenium code we will perform drag and drop action.
 // Steps to perform in case of drag and drop. 
 // 1. setup the property of chromedriver to perform drag and drop operation through chrome web browser.
-// 2. Initialize ChromeDriver object through ChromeDriver class.
+// 2. Initialize WebDriver object through ChromeDriver class.
 // 3. Open the web page http://jqueryui.com/droppable/
 // 4. In this case we switch the focus to frame 
 // 5. Get the reference of source element using xpath.
@@ -23,8 +23,8 @@ public class DragAndDrop {
 	public static void main(String[] args) throws InterruptedException {
 	// 1. setup the property of chromedriver because we will perform testing of drag and drop operation through chrome web browser.
 	System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
-	// 2. Initialize ChromeDriver object through ChromeDriver class.
-	ChromeDriver browserObject = new ChromeDriver();
+	// 2. Initialize WebDriver object through ChromeDriver class.
+	WebDriver browserObject = new ChromeDriver();
 	// 3. Open the web page http://jqueryui.com/droppable/	
 	browserObject.get("http://jqueryui.com/droppable/");
         // 4. In this case we switch the focus to frame 
