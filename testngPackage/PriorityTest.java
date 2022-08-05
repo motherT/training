@@ -1,7 +1,7 @@
 // In this testng code,we are trying to set the sequence of test execution using priority
 // Steps to perform 
 // 1. The @Test is used along with priority and based on priority the method will exceute. The piority is set as 1 .So this will exceute first.
-// 2. setup the property of chromedriver to perform mutiple test case through chrome web browser.
+// 2. setup the property of Webdriver to perform mutiple test case through chrome web browser.
 // 3. Initialize WebDriver object through ChromeDriver class.
 // 4. Open the web page http://www.amazon.com/ in first test case 
 // 5. Thread.sleep is used to hold the part of code for given time limit. In this case take mouse over the thread and add Interrupted exception to this method
@@ -16,7 +16,7 @@ public class PriorityTest {
 	// 1. The @Test is used along with priority and based on priority the method will exceute. The piority is set as 1 .So this will exceute first.
 	@Test(priority =1)
     	public void openingAmazonSite() throws InterruptedException {
-      // 2. setup the property of chromedriver to perform mutiple test case through chrome web browser.
+      // 2. setup the property of Webdriver to perform mutiple test case through chrome web browser.
         System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 	// 3. Initialize WebDriver object through ChromeDriver class.
         browserObject = new ChromeDriver();
