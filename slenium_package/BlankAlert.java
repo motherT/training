@@ -20,19 +20,19 @@ public class BlankAlert {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		 WebDriver browserDriver;
+		 WebDriver browserObject;
 		// 1. setup the property of chromedriver to perform blank alert through chrome web browser. 
 	        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 		
 		// 2. Initialize Webdriver object through ChromeDriver class.
-	        browserDriver = new ChromeDriver();
+	        browserObject = new ChromeDriver();
 	       // 3. Open the form page https://mail.rediff.com/cgi-bin/login.cgi
-	        browserDriver.get("https://mail.rediff.com/cgi-bin/login.cgi");
+	        browserObject.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		
 		// 4. Locate the signIn button without passing the value to username and password in input box and perform click.
-	        browserDriver.findElement(By.name("proceed")).click();
+	        browserObject.findElement(By.name("proceed")).click();
 	       // 5. Intialize Alert object using switchTo and alert method.
-	        Alert alert = browserDriver.switchTo().alert();
+	        Alert alert = browserObject.switchTo().alert();
 		
 		// 6. Thread.sleep is used to hold the part of code for given time limit. In this case take mouse over the thread and add Interrupted exception to this method
 	        Thread.sleep(3000);
@@ -42,7 +42,7 @@ public class BlankAlert {
 		// 8 . To move to next step accept the alert
 	        alert.accept();
 		// 9. Close the web browser
-	        browserDriver.close();
+	        browserObject.close();
 	}
 
 }
