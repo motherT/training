@@ -38,7 +38,7 @@ public class DragAndDrop {
         Thread.sleep(3000);
 
 	// 8. In case of dropdown we use Actions class.Create refernce and pass the driver to the reference
-        Actions act = new Actions(browserDriver);
+        Actions act = new Actions(browserObject);
         
         // 9. Using the action reference call the dragAndDrop method and pass the source and target element
         act.dragAndDrop(source, target).build().perform();
