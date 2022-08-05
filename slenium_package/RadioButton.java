@@ -1,6 +1,6 @@
 // In this selenium code ,we will perform click on radiobutton and send the radio value.
 // Steps to perform in case of radio button
-// 1. setup the property of chromedriver because we will perform testing of login process through chrome web browser.
+// 1. setup the property of chromedriver because we will perform radio button testing through chrome web browser.
 // 2. Initialize Webdriver object through ChromeDriver class.
 // 3. Open the form page http://training.qaonlinetraining.com/testPage.php
 // 4. Get the reference of female button by locating using xpath 
