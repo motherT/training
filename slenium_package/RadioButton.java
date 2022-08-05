@@ -28,18 +28,18 @@ public class RadioButton {
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 		
 		// 2. Initialize Webdriver object through ChromeDriver class.
-       		 WebDriver browserDriver = new ChromeDriver();
+       		 WebDriver browserObject = new ChromeDriver();
 		// 3. Open the form page http://training.qaonlinetraining.com/testPage.php
-	        browserDriver.get("http://training.qaonlinetraining.com/testPage.php");
+	        browserObject.get("http://training.qaonlinetraining.com/testPage.php");
 	        // now we will save the locator of element in WebElement object .
 	        // 4. Get the reference of female button by locating using xpath 
-	        WebElement radioButtonFemale = browserDriver.findElement(By.xpath("//input[@value='female']"));
+	        WebElement radioButtonFemale = browserObject.findElement(By.xpath("//input[@value='female']"));
 		// 5. Get the reference of male button by locating using xpath
-	        WebElement radioButtonMale = browserDriver.findElement(By.xpath("//input[@value='male']"));
+	        WebElement radioButtonMale = browserObject.findElement(By.xpath("//input[@value='male']"));
 		// 6. Get the reference of other button by locating using xpath
-	        WebElement radioButtonOther = browserDriver.findElement(By.xpath("//input[@value='Other']"));
+	        WebElement radioButtonOther = browserObject.findElement(By.xpath("//input[@value='Other']"));
 	        // 7. Get the reference of submit button by locating using xpath
-	        WebElement submitButton = browserDriver.findElement(By.xpath("//input[@value='Send']"));
+	        WebElement submitButton = browserObject.findElement(By.xpath("//input[@value='Send']"));
 		
 		// 8. Perform click on female button 
 	        radioButtonFemale.click();
