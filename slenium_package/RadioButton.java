@@ -1,4 +1,4 @@
-// In this selenium code ,we will perform click on the radiobutton and send the radio value.
+// In this selenium code ,we will perform click on radiobutton and send the radio value.
 // Steps to perform in case of radio button
 // 1. setup the property of chromedriver because we will perform testing of login process through chrome web browser.
 // 2. Initialize Webdriver object through ChromeDriver class.
