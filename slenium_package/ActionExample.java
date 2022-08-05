@@ -1,5 +1,16 @@
-package slenium_package;
+// In this selenium code we will perform Right Click action.
+// Steps to perform in case of Right Click . 
+// 1. setup the property of chromedriver because we will perform testing of Mouse Over operation through chrome web browser.
+// 2. Initialize ChromeDriver object through ChromeDriver class.
+// 3. Open the web page http://swisnl.github.io/jQuery-contextMenu/demo.html
+// 4. In case of rightclick we use Actions class.Create refernce and pass the driver to the reference
+// 5. Get the reference of button to perform right click.
+// 6. Using the action reference call the contextclick method and pass  element to perform right click
 
+
+
+
+package slenium_package;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -7,19 +18,19 @@ import org.openqa.selenium.interactions.Actions;
 
 public class ActionExample {
 	public static void main(String[] args) {
-		// set the path of driver 
+		// 1. setup the property of chromedriver because we will perform testing of Mouse Over operation through chrome web browser.
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
-		// Create the object of driver.
+		// 2. Initialize ChromeDriver object through ChromeDriver class.
 		ChromeDriver driver = new ChromeDriver();
-		// pass the link of website
+		// 3. Open the web page http://swisnl.github.io/jQuery-contextMenu/demo.html
 		driver.get("http://swisnl.github.io/jQuery-contextMenu/demo.html");
         
-        // Action class - action object -- passing driver information as parameter
+        // 4. In case of dropdown we use Actions class.Create refernce and pass the driver to the reference
         Actions action = new Actions(driver);    
-	// Locate the button locator 
+	// 5. Get the reference of button to perform right click.
         WebElement rightClickElement = driver.findElement(By.xpath("//span[@class='context-menu-one btn btn-neutral']"));
         
-        // contextClick is the method() of class Action
+       // 6. Using the action reference call the contextclick method and pass  element to perform right click
         action.contextClick(rightClickElement).build().perform();
 	}
 
