@@ -1,38 +1,50 @@
-package slenium_package;
+// In this selenium code we will perform drag and drop action.
+// Steps to perform in case of drag and drop. 
+// 1. setup the property of chromedriver because we will perform testing of drag and drop operation through chrome web browser.
+// 2. Initialize ChromeDriver object through ChromeDriver class.
+// 3. Open the web page http://jqueryui.com/droppable/
+// 4. In this case we switch the focus to frame 
+// 5. Get the reference of source element.
+// 6. Get the reference of target element
+// 7. Thread.sleep is used to hold the part of code for given time limit. In this case take mouse over the thread and add Interrupted exception to this method
+// 8. In case of dropdown we use Actions class.Create refernce and pass the driver to the reference
+// 9. Using the action reference call the dragAndDrop method and pass the source and target element
+// 10. Close the browser
 
+package slenium_package;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-// In this code we are  performing drag and drop through automation
-// Locate the source and target element and perfrom drag and drop using this element
 
 public class DragAndDrop {
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
-		ChromeDriver browserDriver = new ChromeDriver();
-		
+	// 1. setup the property of chromedriver because we will perform testing of drag and drop operation through chrome web browser.
+	System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
+	// 2. Initialize ChromeDriver object through ChromeDriver class.
+	ChromeDriver browserDriver = new ChromeDriver();
+	// 3. Open the web page http://jqueryui.com/droppable/	
 	browserDriver.get("http://jqueryui.com/droppable/");
-        // focussing inside the iframe - Frame WebElement
+        // 4. In this case we switch the focus to frame 
         browserDriver.switchTo().frame(0);
-        // using xpath get the source element and target element
+        // 5. Get the reference of source element.
         WebElement source = browserDriver.findElement(By.xpath("//div[@id='draggable']"));
+	// 6. Get the reference of target element
         WebElement target = browserDriver.findElement(By.xpath("//div[@id='droppable']"));
-        
-        // message for console - checking execution flow of program
-        System.out.println("opening page...perform drag and drop");
+       
+	// 7. Thread.sleep is used to hold the part of code for given time limit. In this case take mouse over the thread and add Interrupted exception to this method
         Thread.sleep(3000);
 
-	// In case of Drag and Drop we use the Actions class 
+	// 8. In case of dropdown we use Actions class.Create refernce and pass the driver to the reference
         Actions act = new Actions(browserDriver);
         
-        // dragAndDrop is the method() of class Action
+        // 9. Using the action reference call the dragAndDrop method and pass the source and target element
         act.dragAndDrop(source, target).build().perform();
-        System.out.println("drag N drop Done...");
+        
         Thread.sleep(3000);
+	// 10. Close the browser
         browserDriver.close();
 
 	}
