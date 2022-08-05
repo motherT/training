@@ -1,7 +1,7 @@
 
 // In this selenium code ,different types of alert .
 // Steps to perform in case of dropdown. 
-// 1. setup the property of chromedriver because we will perform testing of login process through chrome web browser.
+// 1. setup the property of chromedriver because we will perform Alert testing through chrome web browser.
 // 2. Initialize Webdriver object through ChromeDriver class.
 // 3. Open the form page http://training.qaonlinetraining.com/testPage.php
 // 4. Locate the alert button and perform click 
