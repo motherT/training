@@ -20,7 +20,7 @@ public class ActionExample {
 		// 2. Initialize WebDriver object through ChromeDriver class.
 		WebDriver browserObject = new ChromeDriver();
 		// 3. Open the web page http://swisnl.github.io/jQuery-contextMenu/demo.html
-		driver.get("http://swisnl.github.io/jQuery-contextMenu/demo.html");
+		browserObject.get("http://swisnl.github.io/jQuery-contextMenu/demo.html");
         
         // 4. In case of dropdown we use Actions class.Create refernce and pass the driver to the reference
         Actions action = new Actions(browserObject);    
