@@ -1,6 +1,6 @@
 // In this selenium code ,we will select value from dropdown and send selected value.
 // Steps to perform in case of dropdown. 
-// 1. setup the property of chromedriver because we will perform Dropdown testing through chrome web browser.
+// 1. setup the property of chromedriver to perform Dropdown testing through chrome web browser.
 // 2. Initialize Webdriver object through ChromeDriver class.
 // 3. Open the form page http://training.qaonlinetraining.com/testPage.php
 // 4. Select class is used in case of dropdown to pass the dropdown element. 
@@ -21,12 +21,12 @@ public class Dropdown {
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 		
 		// 2. Initialize Webdriver object through ChromeDriver class.
-        	WebDriver browserDriver = new ChromeDriver();
+        	WebDriver browserObject = new ChromeDriver();
 		// 3. Open the form page http://training.qaonlinetraining.com/testPage.php
-	        browserDriver.get("http://training.qaonlinetraining.com/testPage.php");
+	        browserObject.get("http://training.qaonlinetraining.com/testPage.php");
 		
 		// 4. Select class is used in case of dropdown to pass the dropdown element. 
-	        Select countrySelect = new Select(browserDriver.findElement(By.name("country")));
+	        Select countrySelect = new Select(browserObject.findElement(By.name("country")));
 	        
 		// 5. Using the reference of Select class call the selectByVisibleText method and select text in dropdown
 	        countrySelect.selectByVisibleText("USA"); //options [USA,India, Ethiopia,France]
@@ -34,7 +34,7 @@ public class Dropdown {
 	        countrySelect.selectByVisibleText("France");
 	        
 	       // Same explanation for skill dropdown 
-	        Select skillSelect = new Select(browserDriver.findElement(By.name("skill")));
+	        Select skillSelect = new Select(browserObject.findElement(By.name("skill")));
 	        //using skillSelect to select menu options -- Programming
 	        skillSelect.selectByVisibleText("Programming");
 	     
@@ -42,10 +42,10 @@ public class Dropdown {
 	        System.out.println("selectByVisibleText(\"Database");
 	        
 	        // 6. Locate the send button and perform click
-	        browserDriver.findElement(By.name("submit")).click();
+	        browserObject.findElement(By.name("submit")).click();
 	        System.out.println("Form Fill-up Succesfull");
 		// 7. Close the web browser
-	        browserDriver.close();
+	        browserObject.close();
 	}
 
 }
