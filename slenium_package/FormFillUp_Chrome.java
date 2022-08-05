@@ -8,6 +8,7 @@
 // 6. Locate website section using name locator and send values to the the section
 // 7. Locate comment section using name locator and send values to the the section
 // 8. Locate the submit button and perform click
+// 9. Close the browser
 
 
 package seleniumPackage;
@@ -45,6 +46,7 @@ public static void main(String[] args) {
     
    // 8. Locate the submit button and perform click
     browserObject.findElement(By.name("submit")).click();
-   
+   // 9. Close the browser
+    browserObject.close();
 }
 }
