@@ -28,7 +28,7 @@ public class LoginClass {
 	// 2. Initialize Webdriver object through ChromeDriver class.
         browserObject = new ChromeDriver();
 	// 3. Open login page of https://admin-demo.nopcommerce.com/login
-        browserDriver.get("https://admin-demo.nopcommerce.com/login");
+        browserObject.get("https://admin-demo.nopcommerce.com/login");
        
 	// 4. Get reference of Email input box by locate the id method.
         WebElement email=browserDriver.findElement(By.id("Email"));
@@ -47,7 +47,7 @@ public class LoginClass {
 	// 11. Submit the button.
         button.submit();
 	// 12. Close the web browser.
-	browserDriver.close();
+	browserObject.close();
 	}
 
 }
