@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.Select;
 public class Dropdown {
 
 	public static void main(String[] args) {
-		// 1. setup the property of chromedriver because we will perform testing of login process through chrome web browser.
+		// 1. setup the property of chromedriver because we will perform Dropdown testing through chrome web browser.
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 		
 		// 2. Initialize Webdriver object through ChromeDriver class.
