@@ -1,6 +1,6 @@
 //In this code we are trying to perform navigation. 
 // Steps to perform
-// 1. setup the property of chromedriver because we will perform testing of Mouse Over operation through chrome web browser.
+// 1. setup the property of chromedriver to perform navigate through chrome web browser.
 // 2. Initialize WebDriver object through ChromeDriver class.
 // 3. Open the web page https://www.facebook.com/
 // 4. In the print line we are uing getTitle method .This will give the title of current page
