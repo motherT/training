@@ -1,6 +1,6 @@
 // In this selenium code ,we will select value from dropdown and send selected value.
 // Steps to perform in case of dropdown. 
-// 1. setup the property of chromedriver because we will perform testing of login process through chrome web browser.
+// 1. setup the property of chromedriver because we will perform Dropdown testing through chrome web browser.
 // 2. Initialize Webdriver object through ChromeDriver class.
 // 3. Open the form page http://training.qaonlinetraining.com/testPage.php
 // 4. Select class is used in case of dropdown to pass the dropdown element. 
