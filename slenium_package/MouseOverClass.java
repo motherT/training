@@ -1,7 +1,7 @@
 // In this selenium code we will perform Mouse Over action.
 // Steps to perform in case of Mouse Over . 
 // 1. setup the property of chromedriver because we will perform testing of Mouse Over operation through chrome web browser.
-// 2. Initialize ChromeDriver object through ChromeDriver class.
+// 2. Initialize WebDriver object through ChromeDriver class.
 // 3. Open the web page https://www.amazon.com/
 // 4. Thread.sleep is used to hold the part of code for given time limit. In this case take mouse over the thread and add Interrupted exception to this method
 // 5. Get the reference of element to mouse over.
@@ -25,8 +25,8 @@ public class MouseOverClass {
 		// 1. setup the property of chromedriver because we will perform testing of Mouse Over operation through chrome web browser.
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 		
-		// 2. Initialize ChromeDriver object through ChromeDriver class.
-		ChromeDriver browserDriver = new ChromeDriver();
+		// 2. Initialize WebDriver object through ChromeDriver class.
+		WebDriver browserDriver = new ChromeDriver();
 		
 		// 3. Open the web page https://www.amazon.com/
 		 browserDriver.get("https://www.amazon.com/");
