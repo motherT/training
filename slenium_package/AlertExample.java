@@ -1,5 +1,5 @@
 
-// In this selenium code ,different types of alert .
+// In this selenium code ,we will perform different types of alert .
 // Steps to perform in case of dropdown. 
 // 1. setup the property of chromedriver because we will perform Alert testing through chrome web browser.
 // 2. Initialize Webdriver object through ChromeDriver class.
@@ -22,7 +22,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class AlertExample {
 
 	public static void main(String[] args) throws InterruptedException {
-		// 1. setup the property of chromedriver because we will perform testing of login process through chrome web browser.
+		// 1. setup the property of chromedriver because we will perform Alert testing through chrome web browser.
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 		
 		// 2. Initialize Webdriver object through ChromeDriver class.
