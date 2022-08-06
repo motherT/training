@@ -20,7 +20,7 @@ public class ExplicitWaitClass {
 //      
       
       WebDriverWait wait=new WebDriverWait(browserDriver, 20);
-      String SiteTitle = "Google";
+      
       // launch Chrome and redirect it to the Base URLWeb
       browserDriver.get("http://google.com" );
       //Maximizes the browser window
