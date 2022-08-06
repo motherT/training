@@ -1,13 +1,13 @@
 // In this selenium code ,we will perform click on the checkbox and send the checkbox value.
 // Steps to perform in case of checkbox
-// 1. setup the property of chromedriver to perform checkbox testing through chrome web browser.
+// 1. setup the property of chromedriver to perform "checkbox testing" through chrome web browser.
 // 2. Initialize Webdriver object through ChromeDriver class.
 // 3. Open the form page http://training.qaonlinetraining.com/testPage.php
-// 4. Get the reference of checkbox boat button by locating using xpath 
-// 5. Get the reference of checkbox bike button by locating using xpath 
-// 6. Get the reference of checkbox car button by locating using xpath 
-// 7. Get the reference of checkbox horse button by locating using xpath 
-// 8. Get the reference of submit button by locating using xpath
+// 4. Locate the boat checkbox button using xpath and store the value in  reference created that is checkboxBoat.
+// 5. Locate the bike checkbox button using xpath and store the value in  reference created that is checkboxBike. 
+// 6. Locate the car checkbox button using xpath and store the value in  reference created that is checkboxCar. 
+ // 7. Locate the horse checkbox button using xpath and store the value in  reference created that is checkboxHorse.
+// 8. Locate the submit checkbox button using xpath and store the value in  reference created that is submitButton.
 // 9. Perform click on boat button 
 // 10. Perform click on bike button
 // 11. Perform click on horse button 
@@ -23,21 +23,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class CheckBox {
 
 	public static void main(String[] args) throws InterruptedException {
-	// 1. setup the property of chromedriver because we will perform checkbox testing through chrome web browser.
+	// 1. setup the property of chromedriver because we will perform "checkbox testing" through chrome web browser.
 	System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 	// 2. Initialize Webdriver object through ChromeDriver class.
         WebDriver browserObject = new ChromeDriver();
 	// 3. Open the form page http://training.qaonlinetraining.com/testPage.php
 	browserObject.get("http://training.qaonlinetraining.com/testPage.php");
-	// 4. Get the reference of checkbox boat button by locating using xpath
+	// 4. Locate the boat checkbox button using xpath and store the value in  reference created that is checkboxBoat.
 	WebElement checkboxBoat = browserObject.findElement(By.xpath("//input[@value='boat']"));
-	// 5. Get the reference of checkbox bike button by locating using xpath 
+	// 5. Locate the bike checkbox button using xpath and store the value in  reference created that is checkboxBike. 
       WebElement checkboxBike = browserObject.findElement(By.xpath("//input[@value='Bike']"));
-    	// 6. Get the reference of checkbox car button by locating using xpath 
+    	// 6. Locate the car checkbox button using xpath and store the value in  reference created that is checkboxCar.
       WebElement checkboxCar = browserObject.findElement(By.xpath("//input[@value='car']")); // selected by-default
-      // 7. Get the reference of checkbox horse button by locating using xpath 
+      // 7. Locate the horse checkbox button using xpath and store the value in  reference created that is checkboxHorse.
       WebElement checkboxHorse = browserObject.findElement(By.xpath("//input[@value='horse']"));
-      // 8. Get the reference of submit button by locating using xpath
+      // 8. Locate the submit checkbox button using xpath and store the value in  reference created that is submitButton.
       WebElement submitButton = browserObject.findElement(By.xpath("//input[@value='Send']"));
       // selecting all options except car- selected by-default .The car element is clicked by default and value .So no need to perform click on the car element
      // 9. Perform click on boat button 
