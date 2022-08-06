@@ -5,7 +5,7 @@
 //3. Open website link https://www.itlearn360.com/.
 //4. Intialize value to variable to keep count of number of links in webpage 
 //5. List is applied on WebElement to collect all the <a> tag in alllinks reference
-//6. Now fetch the value inside the List using getAttribute method.To fetch value in sequence we will use for loop 
+//6. Now pass the alllinks values to link reference and for loop is applied on link reference to fetch value one by one using getAttribute method.
 //7. Calculate number of links and print in all.
 //8. Closing the driver using close method.
 
@@ -33,7 +33,7 @@ public class TagName {
 	        //5. List is applied on WebElement to collect all the <a> tag in alllinks reference
 	        List<WebElement> allLinks = browserObject.findElements(By.tagName("a"));
 		
-		//6. Now fetch the value from the List using getAttribute method.To fetch value in sequence we will use for loop 
+		//6. Now pass the alllinks values to link reference and for loop is applied on link reference to fetch value one by one using getAttribute method.
 	        for (WebElement link : allLinks) {
 	          
 	            System.out.println(link.getAttribute("href"));
