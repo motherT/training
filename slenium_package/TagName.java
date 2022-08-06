@@ -4,7 +4,7 @@
 //2. Initialize Webdriver object through ChromeDriver class.
 //3. Open website link https://www.itlearn360.com/.
 //4. Intialize value to variable to keep count of number of links in webpage 
-//5. List all the tagName in one list.
+//5. List is applied on WebElement to collect all the <a> tag in alllinks reference
 //6. Now fetch the value inside the List using getAttribute method.To fetch value in sequence we will use for loop 
 //7. Calculate number of links and print in all.
 //8. Closing the driver using close method.
@@ -30,7 +30,7 @@ public class TagName {
 		//4. Intialize value to variable to keep count of number of links in webpage 
 	        int count = 0;
 	        
-	        //5. List all the tagName in one object.
+	        //5. List is applied on WebElement to collect all the <a> tag in alllinks reference
 	        List<WebElement> allLinks = browserObject.findElements(By.tagName("a"));
 		
 		//6. Now fetch the value from the List using getAttribute method.To fetch value in sequence we will use for loop 
