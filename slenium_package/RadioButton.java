@@ -1,12 +1,12 @@
 // In this selenium code ,we will perform click on radiobutton and send the radio value.
 // Steps to perform in case of radio button
-// 1. setup the property of chromedriver because we will perform radio button testing through chrome web browser.
+// 1. setup the property of chromedriver because we will perform "radio button" testing through chrome web browser.
 // 2. Initialize Webdriver object through ChromeDriver class.
 // 3. Open the form page http://training.qaonlinetraining.com/testPage.php
-// 4. Get the reference of female button by locating using xpath 
-// 5. Get the reference of male button by locating using xpath 
-// 6. Get the reference of other button by locating using xpath 
-// 7. Get the reference of submit button by locating using xpath
+ // 4. Locate the female radio button using xpath and store the value in  reference created that is radioButtonFemale.
+// 5. Locate the male radio button using xpath and store the value in  reference created that is radioButtonMale
+// 6. Locate the other radio button using xpath and store the value in reference created that is radioButtonOther
+// 7. Locate the send radio button using xpath and store the value in reference created that is submitButton
 // 8. Perform click on female button 
 // 9. Thread.sleep is used to hold the part of code for given time limit. In this case take mouse over the thread and add Interrupted exception to this method
 // 10. Perform click on male button 
@@ -32,13 +32,13 @@ public class RadioButton {
 		// 3. Open the form page http://training.qaonlinetraining.com/testPage.php
 	        browserObject.get("http://training.qaonlinetraining.com/testPage.php");
 	        // now we will save the locator of element in WebElement object .
-	        // 4. Get the reference of female button by locating using xpath 
+	        // 4. Locate the female radio button using xpath and store the value in  reference created that is radioButtonFemale.
 	        WebElement radioButtonFemale = browserObject.findElement(By.xpath("//input[@value='female']"));
-		// 5. Get the reference of male button by locating using xpath
+		// 5. Locate the male radio button using xpath and store the value in  reference created that is radioButtonMale
 	        WebElement radioButtonMale = browserObject.findElement(By.xpath("//input[@value='male']"));
-		// 6. Get the reference of other button by locating using xpath
+		// 6. Locate the other radio button using xpath and store the value in reference created that is radioButtonOther
 	        WebElement radioButtonOther = browserObject.findElement(By.xpath("//input[@value='Other']"));
-	        // 7. Get the reference of submit button by locating using xpath
+	        // 7. Locate the send radio button using xpath and store the value in reference created that is submitButton
 	        WebElement submitButton = browserObject.findElement(By.xpath("//input[@value='Send']"));
 		
 		// 8. Perform click on female button 
