@@ -1,34 +1,54 @@
+// In this code of selenium, perform implicit wait on webpage 
+// Steps to perform 
+// 1. setup the property of WebDriver to perform "implicit wait" through chrome web browser.
+// 2. Initialize WebDriver object through ChromeDriver class.
+// 3. Apply implict wait to webpage .implicitlyWait method  holds the webdriver for a certain amount of time before throwing "No Such Element Exception"
+// In this given time the wait will  locate the element. 
+// 4. Intialize the value of title.
+// 5. Open the web page https://www.google.com/
+// 6. maximaize the browser window
+// 7. Get the title of webpage 
+// 8. Compare the actual element and expected element 
+// 9. close the web browser
 package slenium_package;
-import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ImplicitWait {
+public class ExplicitWaitClass {
 
 	public static void main(String[] args) {
-		
-	// Set the path of chromeDriver browser
+	// 1. setup the property of WebDriver to perform "implicit wait" through chrome web browser.
 	System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
+
+	// 2. Initialize WebDriver object through ChromeDriver class.
+	WebDriver browserObject = new ChromeDriver(); 
+	// 3. Apply implict wait to webpage .implicitlyWait method  holds the webdriver for a certain amount of time before throwing "No Such Element Exception".
+	// In this given time the wait will  locate the element.
+	browserObject.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+	
+	// 4. Intialize the value of title.
+	String eTitle = "Google";
+
+	// 5. Open the web page https://www.google.com/
+	browserObject.get("https://www.google.com/");
 		
-	// Intialize value to the chromeDriver browser
-        ChromeDriver browserDriver = new ChromeDriver();
-	browserDriver.get("https://www.todaytix.com/");
-//        The Implicit Wait in Selenium is used to tell the web driver to wait for a certain amount of time before it throws a "No Such Element Exception". 
-// 	The default setting is 0. 
-//        Once we set the time, the web driver will wait for the element for that time before throwing an exception
-	browserDriver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
-
- // Locate all elements in webpage and click the signIn button
-     browserDriver.findElement(By.xpath("//*[@id=\"navBarSignUpButton\"]/span[1]")).click();
-     browserDriver.findElement(By.xpath("//span[text()='Email']")).click();
-     browserDriver.findElement(By.name("firstName")).sendKeys("firstname");
-     browserDriver.findElement(By.name("lastName")).sendKeys("lastName");
-
-// In case we inspect the email element we see the value of attribute keep changing everytime. Here we need implicit wait to locate element
-     browserDriver.findElement(By.name("email")).sendKeys("info@gmail.com");
-     browserDriver.findElement(By.name("confirmEmail")).sendKeys("info@gmail.com");
-     browserDriver.findElement(By.name("password")).sendKeys("password"); 
-     browserDriver.findElement(By.id("sign-up-submit")).click();
-     browserDriver.close();
+	// 6. maximaize the browser window
+	browserObject.manage().window().maximize() ;
+	// 7. Get the title of webpage 
+	String aTitle = browserObject.getTitle();
+	// 8. Compare the actual element and expected element
+	if (aTitle.equals(eTitle))
+	{
+	System.out.println( "Test Passed") ;
+	}
+	else {
+	System.out.println( "Test Failed" );
+	}
+	// 9. close the web browser
+	browserObject.close();
 
 	}
 
