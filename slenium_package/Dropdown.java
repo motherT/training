@@ -3,8 +3,8 @@
 // 1. setup the property of chromedriver to perform Dropdown testing through chrome web browser.
 // 2. Initialize Webdriver object through ChromeDriver class.
 // 3. Open the form page http://training.qaonlinetraining.com/testPage.php
-// 4. Select class is used in case of dropdown to pass the dropdown element. 
-// 5. Using the reference of Select class call the selectByVisibleText method and select text in dropdown
+// 4. Select class is used in case of Dropdown. Select class object countrySelect specifies the webElement location. 
+// 5. Using the object of Select class call the selectByVisibleText method and select text in dropdown
 // 6. Locate the send button and perform click
 // 7. Close the web browser
 
@@ -25,10 +25,10 @@ public class Dropdown {
 		// 3. Open the form page http://training.qaonlinetraining.com/testPage.php
 	        browserObject.get("http://training.qaonlinetraining.com/testPage.php");
 		
-		// 4. Select class is used in case of dropdown to pass the dropdown element. 
+		// 4. Select class is used in case of Dropdown. Select class object countrySelect specifies the webElement location.
 	        Select countrySelect = new Select(browserObject.findElement(By.name("country")));
 	        
-		// 5. Using the reference of Select class call the selectByVisibleText method and select text in dropdown
+		// 5. Using the object of Select class call the selectByVisibleText method and select text in dropdown
 	        countrySelect.selectByVisibleText("USA"); //options [USA,India, Ethiopia,France]
 	        //or
 	        countrySelect.selectByVisibleText("France");
