@@ -1,12 +1,12 @@
-// In this selenium code ,we will pass value to input text box in form and perform click on send button
+// In this selenium code ,pass value to input text field and send the values.
 // Steps to perform in form 
-//1. setup the property of chromedriver because we will perform passing value to input box in form through chrome web browser.
+//1. setup the property of chromedriver to pass value to form input box through chrome web browser.
 // 2. Initialize Webdriver object through ChromeDriver class.
 // 3. Open form page of http://www.training.qaonlinetraining.com/testPage.php
-// 4. Locate Name section using name locator and send values to the the section
-// 5. Locate email section using name locator and send values to the the section
-// 6. Locate website section using name locator and send values to the the section
-// 7. Locate comment section using name locator and send values to the the section
+// 4. Locate Name section using name locator and send values using sendkeys
+// 5. Locate email section using name locator and send values using sendkeys
+// 6. Locate website section using name locator and send values using sendkeys
+// 7. Locate comment section using name locator and send values using sendkeys
 // 8. Locate the submit button and perform click
 // 9. Close the browser
 
@@ -23,7 +23,7 @@ public static void main(String[] args) {
 	
   
     WebDriver browserObject;
-  //1. setup the property of chromedriver because we will perform passing value to input box in form through chrome web browser.
+  //1. setup the property of chromedriver to pass value to form input box through chrome web browser.
     System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 	
     // 2. Initialize Webdriver object through ChromeDriver class.
@@ -32,16 +32,16 @@ public static void main(String[] args) {
     browserObject.get("http://www.training.qaonlinetraining.com/testPage.php");
     
     // sending text to the input box in the web form--------------
-    // 4. Locate Name section using name locator and send values to the the section
+    // 4. Locate Name section using name locator and send values using sendkeys
     browserObject.findElement(By.name("name")).sendKeys("DemoName");
  
-    // 5. Locate email section using name locator and send values to the the section
+    // 5. Locate email section using name locator and send values using sendkeys
     browserObject.findElement(By.name("email")).sendKeys("DemoEmail@demo.com");
     
-   // 6. Locate website section using name locator and send values to the the section
+   // 6. Locate website section using name locator and send values using sendkeys
     browserObject.findElement(By.name("website")).sendKeys("www.demosite.com");
     
-    // 7. Locate comment section using name locator and send values to the the section
+    // 7. Locate comment section using name locator and send values using sendkeys
     browserObject.findElement(By.name("comment")).sendKeys("demo comment");
     
    // 8. Locate the submit button and perform click
