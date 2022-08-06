@@ -53,7 +53,7 @@ public class CheckBox {
       // 13. Thread.sleep is used to hold the part of code for given time limit. In this case take mouse over the thread and add Interrupted exception to this method
       Thread.sleep(3000);
       // 14. Close the web browser
-      browserDriver.close();
+      browserObject.close();
 	}
 
 }
