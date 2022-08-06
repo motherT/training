@@ -1,6 +1,6 @@
-// In this selenium code we are opening the website link using chromeDriver
+// In this selenium code we are opening google website link using chromeDriver
 // Steps to perform 
-// 1. setup the property of chromedriver because we will perform testing of login process through chrome web browser.
+// 1. setup the property of chromedriver to open google page through chrome web browser.
 // 2. Initialize Webdriver object through ChromeDriver class.
 // 3. Open the http://www.google.com/ link using get method.
 
