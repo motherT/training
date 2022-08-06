@@ -23,7 +23,7 @@ public static void main(String[] args) {
         browserObject = new ChromeDriver();
        
 	// 3. Open the web page https://www.google.com/
-        browserObject.get(https://www.google.com/);
+        browserObject.get("https://www.google.com/");
 	// 4. Get the reference of the gmail text using textLink.		  
         WebElement blogLink = browserObject.findElement(By.linkText("Gmail"));
 			  
