@@ -38,14 +38,14 @@ public class AlertExample {
 	        Alert alert = browserObject.switchTo().alert();
 		
 		// 6. getText method is used to get the text from alert box 
-	        System.out.println(alert.getText());\
+	        System.out.println(alert.getText());
 		// 7. Thread.sleep is used to hold the part of code for given time limit. In this case take mouse over the thread and add Interrupted exception to this method	
 	        Thread.sleep(6000);
 		
 		// 8. Switch the browserdriver control to alert box and accept the alert uing accept method 
 	        alert.accept();
 	        
-	        // example 2 - dismiss(You pressed Cancel!)
+	        // example 2 - dismiss(You pressed Cancel!). The steps are same only name a new object
 		browserObject.findElement(By.id("confirm")).click();
 	        Alert alert1 = browserObject.switchTo().alert();
 	        System.out.println(alert1.getText());
@@ -53,7 +53,7 @@ public class AlertExample {
 		// 9. Switch the browserdriver control to alert box and cancel the alert using dismiss method 
 	        alert1.dismiss();
 	        
-	        // example 3 - accept and Type(Hello Mr. Bond! How are you today?
+	        // example 3 - accept and Type(Hello Mr. Bond! How are you today? ) .The steps are same only name a new object
 	        browserObject.findElement(By.id("prompt")).click();
 	        Alert alert2 = browserObject.switchTo().alert();
 	        System.out.println(alert2.getText());
