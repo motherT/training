@@ -1,10 +1,10 @@
 //In this Selenium code,we are trying to check the text is link or not.
 // Steps to perform 
-// 1. setup the property of WebDriver to perform linktext through chrome web browser.
+// 1. setup the property of WebDriver to perform "linktext" through chrome web browser.
 // 2. Initialize WebDriver object through ChromeDriver class.
 // 3. Open the web page https://www.google.com/
-// 4. Get the reference of the gmail text using textLink.
-// 5. Then check  the text is displayed  or not on webpage
+// 4. The value of text link is stored in bloglink reference . Here TextLink is a locator that checks wether a text is link or not. 
+// 5. If the text is form of link then its displayed or else will not display
 // 6. Close the browser
 
 package seleniumPackage;
@@ -17,18 +17,18 @@ public class LinkTest {
 public static void main(String[] args) {
 		
 	WebDriver browserObject;
-       // 1. setup the property of WebDriver to perform linktext through chrome web browser.
+       // 1. setup the property of WebDriver to perform "linktext" through chrome web browser.
         System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 	// 2. Initialize WebDriver object through ChromeDriver class.
         browserObject = new ChromeDriver();
        
 	// 3. Open the web page https://www.google.com/
         browserObject.get("https://www.google.com/");
-	// 4. Get the reference of the gmail text using textLink.		  
+	// 4. The value of text link is stored in bloglink reference . Here TextLink is a locator that checks wether a text is link or not.		  
         WebElement blogLink = browserObject.findElement(By.linkText("Gmail"));
 			  
 			 
-	// 5. Then check  the text is displayed  or not on webpage
+	// 5. If the text is form of link then its displayed or else will not display
         if (blogLink.isDisplayed()) {
             System.out.println("Gmail link is diplayed usingLinkText");
         } else {
