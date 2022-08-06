@@ -22,7 +22,7 @@ public class ActionExample {
 		// 3. Open the web page http://swisnl.github.io/jQuery-contextMenu/demo.html
 		browserObject.get("http://swisnl.github.io/jQuery-contextMenu/demo.html");
         
-        // 4. In case of dropdown we use Actions class.Create refernce and pass the driver to the reference
+        // 4. In case of RightClick we use Actions class.Create refernce and pass the driver to the reference
         Actions action = new Actions(browserObject);    
 	// 5. Get the reference of button to perform right click.
         WebElement rightClickElement = browserObject.findElement(By.xpath("//span[@class='context-menu-one btn btn-neutral']"));
