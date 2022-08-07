@@ -2,7 +2,7 @@
 // Steps to perform 
 // 1. setup the property of WebDriver to perform "implicit wait" through chrome web browser.
 // 2. Initialize WebDriver object through ChromeDriver class.
-// 3. Apply implict wait to webpage .implicitlyWait method  holds the webdriver for a certain amount of time before throwing "No Such Element Exception"
+// 3. Apply implict wait to webpage .The implicitlyWait method  holds the webdriver for a certain amount of time before throwing "No Such Element Exception"
 // In this given time the wait will  locate the element. 
 // 4. Intialize the value of title.
 // 5. Open the web page https://www.google.com/
