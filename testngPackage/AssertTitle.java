@@ -1,25 +1,36 @@
+// In this testng code, we are using assert method to check output and the expected output.
+// Steps to perform
+// 1. Create a method and add @Test.
+// 2. setup the property of chromedriver and use  "assertEquals method " through chrome web browser.
+// 3.  Initialize Webdriver object through ChromeDriver class.
+// 4. pass the https://google.com link using get method 
+// 5. Define the title value that we are expecting.
+// 6. Get the title value of the website using getTitle method 
+// 7. Using assertEquals method pass both value and if the value matches then the test will pass or else fail.
+
+
 package testngPackage;
-
 import static org.testng.Assert.assertEquals;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class AssertTitle {
+	// 1. Create a method and add @Test.
 	@Test
 	  public void checkGoogleSite() {
-	      WebDriver driver;
-	        // for running in Chrome, uncomment 2 following lines
+	      WebDriver browserObject;
+	        // 2. setup the property of chromedriver and use  "assertEquals method " through chrome web browser.
 	        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
-	        driver = new ChromeDriver();
-//	        System.setProperty("webdriver.gecko.driver", "C:\\Users\\Administrator\\Documents\\drivers\\geckodriver.exe");
-//	        driver = new FirefoxDriver();
-	        driver.get("https://google.com");
-	        // storing expected and actual value
+		 // 3.  Initialize Webdriver object through ChromeDriver class.
+	        browserObject = new ChromeDriver();
+		  // 4. pass the https://google.com link using get method 
+	        browserObject.get("https://google.com");
+	        // 5. Define the title value that we are expecting.
 	        String expectedTitle = "Google";
-	        String actualTitle = driver.getTitle();
-	        // asserting the page title to be Google
+		  // 6. Get the title value of the website using getTitle method 
+	        String actualTitle = browserObject.getTitle();
+	        // 7. Using assertEquals method pass both value and if the value matches then the test will pass or else fail.
 	        assertEquals(actualTitle, expectedTitle);
 	        
 	  }
