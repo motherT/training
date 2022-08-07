@@ -23,22 +23,22 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.DataProvider;
 
 public class DataProviderClass {
-	WebDriver browserDriver;
+	WebDriver browserObject;
 	// 4. Now in method checking the @Test is passed along with the dataProvider keyword and the dataprovider method name dp
 	 @Test(dataProvider = "dp")
 	    public void checking(String userName, String passWord, String msg) throws InterruptedException {
 		    // 5. setup the property of chromedriver because we will perform testing of login process through chrome web browser.
 	        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
 	        // create object name driver of type ChromeDriver
-	        browserDriver = new ChromeDriver();
+	        browserObject = new ChromeDriver();
 		   
-	        browserDriver.get("https://admin-demo.nopcommerce.com/login");
+	        browserObject.get("https://admin-demo.nopcommerce.com/login");
 		     // 6. Get reference of Email input box by locate the id method.
-	        WebElement username = browserDriver.findElement(By.name("Email"));
+	        WebElement username = browserObject.findElement(By.name("Email"));
 		  // 7. Get reference of Password input box by locate the id method.
-	        WebElement password = browserDriver.findElement(By.name("Password"));
+	        WebElement password = browserObject.findElement(By.name("Password"));
 		    // 8. Get reference of login button by locate the classname method.
-	        WebElement submitBtn = browserDriver.findElement(By.xpath("/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button"));
+	        WebElement submitBtn = browserObject.findElement(By.xpath("/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button"));
 		    // 9. Clear the Email input box.
 	        username.clear();
 		    // 10. Provide/Enter the correct email to email input box through reference.
