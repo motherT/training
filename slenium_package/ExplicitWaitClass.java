@@ -33,7 +33,7 @@ public class ExplicitWaitClass {
      
       WebElement gmailLink;
 	// 5. Locate the gmail element and apply the wait and until method to the element.
-      gmailLink= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath( "//a[contains(text(),'Gmaileeee')]")));
+      gmailLink= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath( "//a[contains(text(),'Gmail')]")));
       gmailLink.click();
      // 6. close the browser
    browserObject.quit();
