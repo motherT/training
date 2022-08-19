@@ -62,7 +62,7 @@ public class DataProviderClass {
     return new Object[][] {
     	new Object[] { "admin", "admin132" ,"Wrong Credentials"}, 
         new Object[] { "admin", "admnhhj","Wrong Credentials" },
-        new Object[] { "admin@yourstore.com", "admin","Test Passed" },
+        new Object[] { "admin@yourstore.com", "admin","Test Passed" }
     };
   }
 }
