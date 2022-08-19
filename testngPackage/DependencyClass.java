@@ -45,7 +45,7 @@ public class DependencyClass {
         browerObject.close();
     }
     // 8. In next method to set the dependency use dependsOnMethods and pass the method name depend to.
-    @Test(dependsOnMethods ="openingCNNSite")
+    @Test(dependsOnMethods ="openingCNBCSite")
     public void openingYahooSite() throws InterruptedException {
         // 2. setup the property of WebDriver to set the dependency of method through chrome web browser
         System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
