@@ -26,7 +26,7 @@ public class SearchCode {
 		// 5. Locate the search button and perform click
 		browserObject.findElement(By.name("btnK")).submit();
 		// 6. close the browser
-		browserObject.close()'
+		browserObject.close();
 	}
 
 }
