@@ -42,7 +42,7 @@ public class AlertExample {
 		// 7. Thread.sleep is used to hold the part of code for given time limit. In this case take mouse over the thread and add Interrupted exception to this method	
 	        Thread.sleep(6000);
 		
-		// 8. Switch the browserdriver control to alert box and accept the alert uing accept method 
+		// 8. Switch the browserObject control to alert box and accept the alert using accept method 
 	        alert.accept();
 	        
 	        // example 2 - dismiss(You pressed Cancel!). The steps are same only name a new object
@@ -50,7 +50,7 @@ public class AlertExample {
 	        Alert alert1 = browserObject.switchTo().alert();
 	        System.out.println(alert1.getText());
 	        Thread.sleep(6000);
-		// 9. Switch the browserdriver control to alert box and cancel the alert using dismiss method 
+		// 9. Switch the browserObject control to alert box and cancel the alert using dismiss method 
 	        alert1.dismiss();
 	        
 	        // example 3 - accept and Type(Hello Mr. Bond! How are you today? ) .The steps are same only name a new object
@@ -58,7 +58,7 @@ public class AlertExample {
 	        Alert alert2 = browserObject.switchTo().alert();
 	        System.out.println(alert2.getText());
 	        Thread.sleep(6000);
-		// 10. Switch the browserdriver control to alert box and send value to the alert box using sendkeys method
+		// 10. Switch the browserObject control to alert box and send value to the alert box using sendkeys method
 	        alert2.sendKeys("Mr. Bond");
 		// 11. After the value is send accept the alert using accept method.
 	        alert2.accept();
