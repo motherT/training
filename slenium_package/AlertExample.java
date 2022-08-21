@@ -8,9 +8,9 @@
 // 5. Intialize Alert object using switchTo and alert method
 // 6. getText method is used to get the text from alert box 
 // 7. Thread.sleep is used to hold the part of code for given time limit. In this case take mouse over the thread and add Interrupted exception to this method
-// 8. Switch the browserdriver control to alert box and accept the alert uing accept method
-// 9. Switch the browserdriver control to alert box and cancel the alert using dismiss method 
-// 10. Switch the browserdriver control to alert box and send value to the alert box using sendkeys method
+// 8. Switch the browserObject control to alert box and accept the alert uing accept method
+// 9. Switch the browserObject control to alert box and cancel the alert using dismiss method 
+// 10. Switch the browserObject control to alert box and send value to the alert box using sendkeys method
 // 11. After the value is send accept the alert using accept method.
 // 11. Close the web browser
 
