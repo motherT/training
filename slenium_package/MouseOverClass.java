@@ -34,7 +34,7 @@ public class MouseOverClass {
 		// 4. Thread.sleep is used to hold the part of code for given time limit. In this case take mouse over the thread and add Interrupted exception to this method
 	        Thread.sleep(3000);
 		// 5. Locate the element using the xpath and store in the reference SiginInelement 
-	        WebElement element = browserObject.findElement(By.xpath("//span[contains(text(),'Hello, Sign in')]")) ;
+	        WebElement element = browserObject.findElement(By.xpath("//span[contains(text(),'Hello, sign in')]")) ;
 	        
 		
 	      
