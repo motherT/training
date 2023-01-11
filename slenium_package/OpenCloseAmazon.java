@@ -14,7 +14,7 @@ public static void main(String[] args) {
         WebDriver browserObject = new ChromeDriver();
 	// 3. Open the http://www.amazon.com/ link using get method.
         browserObject.get("http://www.amazon.com/");
-	
+	browserObject.close();
 	}
 
 }
